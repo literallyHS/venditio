@@ -1,0 +1,2 @@
+# venditio
+Venditio - Trading Agent
