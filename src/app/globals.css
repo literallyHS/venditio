@@ -40,3 +40,117 @@ a {
     color-scheme: dark;
   }
 }
+
+/* About us hover popup */
+.about {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  outline: none;
+}
+
+.about-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--foreground);
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: default;
+  user-select: none;
+  backdrop-filter: saturate(140%) blur(4px);
+}
+
+/* Twitter button appearance */
+.about-twitter {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-trigger {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* Dev error overlay görünür kalsın (sorunları teşhis etmek için) */
+
+.about-popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(380px, 92vw);
+  pointer-events: none;
+}
+
+.about-inner {
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+  transition: opacity 160ms ease, transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px) saturate(140%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-inner {
+    background: rgba(20, 20, 20, 0.86);
+    color: #eee;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.about:focus .about-inner,
+.about:hover .about-inner,
+.about:focus-within .about-inner {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.about-inner p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.about-inner .about-head {
+  margin-top: 2px;
+}
+
+.about-inner hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-inner hr {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* Next.js dev overlay/toast ögelerini gizle */
+#nextjs-portal-root,
+#nextjs-portal,
+.nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dialog],
+[data-nextjs-codeframe],
+[data-nextjs-error-overlay],
+[data-nextjs-build-error],
+[data-nextjs-hmr-indicator] {
+  display: none !important;
+}
