@@ -1,5 +1,3 @@
----
-
 # Venditio PTA
 
 ## 🎯 About the Project
