@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Venditio PTA
 
 A [Next.js](https://nextjs.org) project built with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
@@ -435,3 +436,7 @@ Next.js hakkında daha fazla bilgi için:
 Next.js uygulamanızı deploy etmenin en kolay yolu [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) kullanmaktır.
 
 Daha fazla detay için [Next.js deployment dokümantasyonunu](https://nextjs.org/docs/app/building-your-application/deploying) inceleyin.
+=======
+# venditio
+Venditio - Trading Agent
+>>>>>>> 0676eaf4e173d7c4762e487ea65e5934e3bef521
