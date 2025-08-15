@@ -1,161 +1,49 @@
-# Venditio PTA
-
-A [Next.js](https://nextjs.org) project built with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ---
 
-## 🚀 Getting Started
+# Venditio PTA
+
+## 🎯 About the Project
+
+**Venditio PTA** (Personal Trading Assistant) is an AI-powered personal trading assistant. This project is an advanced web application that analyzes financial markets, suggests trading strategies, and assists with portfolio management.
+
+### ✨ Features
+
+- 🤖 **AI-Powered Analysis**: Market analysis and predictions using artificial intelligence
+- 📊 **Real-time Data**: Live market data and charts
+- 📈 **Strategy Builder**: Customizable trading strategies
+- 🎯 **Portfolio Management**: Portfolio tracking and risk management
+- 📱 **Responsive Design**: Modern interface compatible with all devices
+- 🔒 **Secure API**: Secure API integrations
+
+### 🛠️ Technologies
+
+- **Frontend**: Next.js 14, React, TypeScript
+- **Backend**: Node.js, API Routes
+- **AI/ML**: OpenAI API integration
+- **Styling**: CSS Modules, Modern CSS
+- **Deployment**: Vercel, Docker ready
+
+## 🚀 Quick Start
 
 ### Prerequisites
-
-Before you begin, ensure you have the following installed:
 
 - **Node.js** (version 18.17 or later)
 - **npm** (comes with Node.js)
 
-To check your versions:
+### Installation
 
 ```bash
-node --version
-npm --version
-```
-
-### 1. Navigate to Project Directory
-
-First, navigate to the project directory:
-
-```bash
-# Navigate to main project folder
-cd "your-project-folder"
-
-# Navigate to project subfolder
+# Navigate to project directory
 cd venditio-pta
-```
 
-**⚠️ Important:** Make sure you're in the `venditio-pta` folder where the `package.json` file is located.
-
-### 2. Install Dependencies
-
-Install project dependencies:
-
-```bash
+# Install dependencies
 npm install
-```
 
-**Expected output:**
-
-```
-added XXX packages, and audited XXX packages in Xs
-found 0 vulnerabilities
-```
-
-### 3. Start Development Server
-
-Start the project in development mode:
-
-```bash
+# Start development server
 npm run dev
 ```
 
-**Expected output:**
-
-```
-> venditio-pta@0.1.0 dev
-> next dev
-
-   - Local:        http://localhost:3000
-   - Network:      http://YOUR_IP:3000
-
- ✓ Starting...
- ✓ Ready in 5.2s
-```
-
-### 4. Open in Browser
-
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
-
-## 🔧 Troubleshooting Common Issues
-
-### Error: "Could not read package.json"
-
-**Symptoms:**
-
-```
-npm error code ENOENT
-npm error syscall open
-npm error path /path/to/your/project/package.json
-npm error errno -4058
-npm error enoent Could not read package.json
-```
-
-**Solutions:**
-
-- You're in the wrong directory
-- Use `cd venditio-pta` to navigate to the correct folder
-- Use `dir` command to verify `package.json` exists
-
-### Error: "Port 3000 is already in use"
-
-**Solutions:**
-
-```bash
-# Find process using port 3000
-netstat -ano | findstr :3000
-
-# Kill the process (get PID from above command)
-taskkill /PID <PID_NUMBER> /F
-```
-
-**Alternative solutions:**
-
-- Use a different port: `npm run dev -- -p 3001`
-- Restart your terminal/command prompt
-- Restart your computer if necessary
-
-### Error: "Module not found" or "Cannot resolve module"
-
-**Solutions:**
-
-```bash
-# Remove node_modules directory
-rmdir /s node_modules
-
-# Remove package-lock.json
-del package-lock.json
-
-# Clear npm cache
-npm cache clean --force
-
-# Reinstall dependencies
-npm install
-```
-
-### Error: "TypeScript compilation failed"
-
-**Solutions:**
-
-```bash
-# Check TypeScript version compatibility
-npm list typescript
-
-# Reinstall TypeScript
-npm install typescript@latest
-
-# Clear TypeScript cache
-npx tsc --build --clean
-```
-
-### Error: "ESLint configuration error"
-
-**Solutions:**
-
-```bash
-# Reinstall ESLint
-npm install eslint@latest
-
-# Clear ESLint cache
-npx eslint --cache-location .eslintcache --cache false .
-```
 
 ## 📁 Project Structure
 
@@ -197,186 +85,52 @@ npm run lint
 - **Local:** http://localhost:3000
 - **Network:** http://YOUR_IP:3000 (local network)
 
-## 📝 Development
-
-Edit `src/app/page.tsx` to modify the page. Changes will be reflected automatically.
-
-## 📚 Additional Resources
-
-For more information about Next.js:
-
-- [Next.js Documentation](https://nextjs.org/docs) - Next.js features and API
-- [Next.js Learn](https://nextjs.org/learn) - Interactive Next.js tutorial
-- [Next.js GitHub Repository](https://github.com/vercel/next.js)
-
-## 🚀 Deployment
-
-The easiest way to deploy your Next.js app is using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
-
-For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
-
----
-
 ---
 
 # Venditio PTA
 
-Bu proje [Next.js](https://nextjs.org) ile oluşturulmuş bir [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app) projesidir.
+## 🎯 Proje Hakkında
 
----
+**Venditio PTA** (Personal Trading Assistant), yapay zeka destekli kişisel trading asistanıdır. Bu proje, finansal piyasaları analiz eden, trading stratejileri öneren ve portföy yönetimi konusunda yardımcı olan gelişmiş bir web uygulamasıdır.
 
-## 🚀 Projeyi Başlatma
+### ✨ Özellikler
+
+- 🤖 **AI-Powered Analysis**: Yapay zeka ile piyasa analizi ve tahmin
+- 📊 **Real-time Data**: Canlı piyasa verileri ve grafikler
+- 📈 **Strategy Builder**: Özelleştirilebilir trading stratejileri
+- 🎯 **Portfolio Management**: Portföy takibi ve risk yönetimi
+- 📱 **Responsive Design**: Tüm cihazlarda uyumlu modern arayüz
+- 🔒 **Secure API**: Güvenli API entegrasyonları
+
+### 🛠️ Teknolojiler
+
+- **Frontend**: Next.js 14, React, TypeScript
+- **Backend**: Node.js, API Routes
+- **AI/ML**: OpenAI API entegrasyonu
+- **Styling**: CSS Modules, Modern CSS
+- **Deployment**: Vercel, Docker ready
+
+## 🚀 Hızlı Başlangıç
 
 ### Ön Gereksinimler
-
-Başlamadan önce aşağıdakilerin yüklü olduğundan emin olun:
 
 - **Node.js** (18.17 veya daha yeni sürüm)
 - **npm** (Node.js ile birlikte gelir)
 
-Sürümlerinizi kontrol etmek için:
+### Kurulum
 
 ```bash
-node --version
-npm --version
-```
-
-### 1. Proje Dizinine Geçiş
-
-Öncelikle proje dizinine geçmeniz gerekiyor:
-
-```bash
-# Ana proje klasörüne geçin
-cd "your-project-folder"
-
-# Proje alt klasörüne geçin
+# Proje dizinine geçin
 cd venditio-pta
-```
 
-**⚠️ Önemli:** `package.json` dosyasının bulunduğu `venditio-pta` klasöründe olduğunuzdan emin olun.
-
-### 2. Bağımlılıkları Yükleme
-
-Proje bağımlılıklarını yükleyin:
-
-```bash
+# Bağımlılıkları yükleyin
 npm install
-```
 
-**Beklenen çıktı:**
-
-```
-added XXX packages, and audited XXX packages in Xs
-found 0 vulnerabilities
-```
-
-### 3. Geliştirme Sunucusunu Başlatma
-
-Projeyi geliştirme modunda başlatın:
-
-```bash
+# Geliştirme sunucusunu başlatın
 npm run dev
 ```
 
-**Beklenen çıktı:**
-
-```
-> venditio-pta@0.1.0 dev
-> next dev
-
-   - Local:        http://localhost:3000
-   - Network:      http://YOUR_IP:3000
-
- ✓ Starting...
- ✓ Ready in 5.2s
-```
-
-### 4. Tarayıcıda Açma
-
 Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine gidin.
-
-## 🔧 Olası Hata Durumları ve Çözümleri
-
-### Hata: "Could not read package.json"
-
-**Belirti:**
-
-```
-npm error code ENOENT
-npm error syscall open
-npm error path /path/to/your/project/package.json
-npm error errno -4058
-npm error enoent Could not read package.json
-```
-
-**Çözüm:**
-
-- Yanlış dizindesiniz
-- `cd venditio-pta` komutu ile doğru klasöre geçin
-- `dir` komutu ile `package.json` dosyasının varlığını kontrol edin
-
-### Hata: "Port 3000 is already in use"
-
-**Çözüm:**
-
-```bash
-# Port 3000'i kullanan işlemi bulun
-netstat -ano | findstr :3000
-
-# İşlemi sonlandırın (PID'yi yukarıdaki komuttan alın)
-taskkill /PID <PID_NUMARASI> /F
-```
-
-**Alternatif çözümler:**
-
-- Farklı port kullanın: `npm run dev -- -p 3001`
-- Terminal/komut istemini yeniden başlatın
-- Gerekirse bilgisayarınızı yeniden başlatın
-
-### Hata: "Module not found" veya "Cannot resolve module"
-
-**Çözüm:**
-
-```bash
-# node_modules klasörünü silin
-rmdir /s node_modules
-
-# package-lock.json'ı silin
-del package-lock.json
-
-# npm önbelleğini temizleyin
-npm cache clean --force
-
-# Bağımlılıkları yeniden yükleyin
-npm install
-```
-
-### Hata: "TypeScript compilation failed"
-
-**Çözüm:**
-
-```bash
-# TypeScript sürüm uyumluluğunu kontrol edin
-npm list typescript
-
-# TypeScript'i yeniden yükleyin
-npm install typescript@latest
-
-# TypeScript önbelleğini temizleyin
-npx tsc --build --clean
-```
-
-### Hata: "ESLint configuration error"
-
-**Çözüm:**
-
-```bash
-# ESLint'i yeniden yükleyin
-npm install eslint@latest
-
-# ESLint önbelleğini temizleyin
-npx eslint --cache-location .eslintcache --cache false .
-```
 
 ## 📁 Proje Yapısı
 
@@ -417,29 +171,3 @@ npm run lint
 
 - **Local:** http://localhost:3000
 - **Network:** http://YOUR_IP:3000 (yerel ağda)
-
-## 📝 Geliştirme
-
-Sayfa düzenlemeleri için `src/app/page.tsx` dosyasını düzenleyin. Değişiklikler otomatik olarak güncellenecektir.
-
-## 📚 Daha Fazla Bilgi
-
-Next.js hakkında daha fazla bilgi için:
-
-- [Next.js Dokümantasyonu](https://nextjs.org/docs) - Next.js özellikleri ve API'si
-- [Next.js Öğrenme](https://nextjs.org/learn) - İnteraktif Next.js eğitimi
-- [Next.js GitHub Repository](https://github.com/vercel/next.js)
-
-## 🚀 Deployment
-
-Next.js uygulamanızı deploy etmenin en kolay yolu [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) kullanmaktır.
-
-Daha fazla detay için [Next.js deployment dokümantasyonunu](https://nextjs.org/docs/app/building-your-application/deploying) inceleyin.
-
----
-
-## 🎯 Proje Hakkında
-
-**Venditio PTA** - Trading Agent projesi. Next.js ile geliştirilmiş modern web uygulaması.
-
-**Global Competition Ready!** 🌍
